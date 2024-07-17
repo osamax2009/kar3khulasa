@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		407005EA2C478174000FF183 /* kar3khulasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005E92C478174000FF183 /* kar3khulasaApp.swift */; };
-		407005EC2C478174000FF183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005EB2C478174000FF183 /* ContentView.swift */; };
+		407005EC2C478174000FF183 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005EB2C478174000FF183 /* HomeView.swift */; };
 		407005EE2C478175000FF183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407005ED2C478175000FF183 /* Assets.xcassets */; };
 		407005F12C478175000FF183 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407005F02C478175000FF183 /* Preview Assets.xcassets */; };
+		407005FB2C478B3B000FF183 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005FA2C478B3B000FF183 /* Stage.swift */; };
+		407005FD2C481AE2000FF183 /* region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005FC2C481AE2000FF183 /* region.swift */; };
+		407005FF2C482B26000FF183 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407005FE2C482B26000FF183 /* School.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		407005E62C478174000FF183 /* kar3khulasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kar3khulasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407005E92C478174000FF183 /* kar3khulasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kar3khulasaApp.swift; sourceTree = "<group>"; };
-		407005EB2C478174000FF183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		407005EB2C478174000FF183 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		407005ED2C478175000FF183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		407005F02C478175000FF183 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		407005FA2C478B3B000FF183 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		407005FC2C481AE2000FF183 /* region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = region.swift; sourceTree = "<group>"; };
+		407005FE2C482B26000FF183 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				407005E92C478174000FF183 /* kar3khulasaApp.swift */,
-				407005EB2C478174000FF183 /* ContentView.swift */,
+				407005EB2C478174000FF183 /* HomeView.swift */,
+				407005F72C478AD0000FF183 /* models */,
 				407005ED2C478175000FF183 /* Assets.xcassets */,
 				407005EF2C478175000FF183 /* Preview Content */,
 			);
@@ -65,6 +72,16 @@
 				407005F02C478175000FF183 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		407005F72C478AD0000FF183 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				407005FA2C478B3B000FF183 /* Stage.swift */,
+				407005FC2C481AE2000FF183 /* region.swift */,
+				407005FE2C482B26000FF183 /* School.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407005EC2C478174000FF183 /* ContentView.swift in Sources */,
+				407005FB2C478B3B000FF183 /* Stage.swift in Sources */,
+				407005EC2C478174000FF183 /* HomeView.swift in Sources */,
 				407005EA2C478174000FF183 /* kar3khulasaApp.swift in Sources */,
+				407005FF2C482B26000FF183 /* School.swift in Sources */,
+				407005FD2C481AE2000FF183 /* region.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
