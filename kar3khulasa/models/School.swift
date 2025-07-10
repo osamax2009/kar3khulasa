@@ -13,6 +13,7 @@ struct School : Identifiable {
     var section :String
     var boys : Int
     var girls : Int
+    var mix:Int
     var sumOfSchools : Int
     var boysStudent : Int
     var girlsStudent : Int
